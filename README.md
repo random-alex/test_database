@@ -1,6 +1,8 @@
 # test_database
-### TL;DR: 1.Create PostgreSQL database , connect to it to R and implement SQL query
-###        2.Calculate sample size
+## TL;DR:
+## 1.Create PostgreSQL database , connect to it to R and implement SQL query
+## 2.Calculate sample size
+### First task.
 Database, that I use. Made in PostgreSQL
 ```
 create table dbo.customer	(
@@ -41,6 +43,6 @@ ON dc.customer_id = dm.c_id2
 ORDER BY customer_name,amount
 ```
 ____________________________________________________________________________________________________________________
-
+### Second task.
 I use second formula for sample size calculation from this http://statistica.ru/local-portals/medicine/planirovanie-meditsinskikh-issledovaniy/
 For parameters p0= 0.6, pk = 0.7 minimal sample size is 3 
