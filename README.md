@@ -17,7 +17,7 @@ create table dbo.purchase_order	(
 		,	order_date		date	NOT NULL
 )
 ```
-SQL query to this data base 
+SQL query to this data base. This query gives as result a table, that consist of customer_name, order_date and four amounts, two highhts and two lowest for each customer.
 ```
 SELECT customer_name, order_date, amount
 FROM dbo_customer as dc
@@ -42,6 +42,7 @@ WHERE rank < 3 OR rank_max < 3) as dm
 ON dc.customer_id = dm.c_id2
 ORDER BY customer_name,amount
 ```
+
 ____________________________________________________________________________________________________________________
 ### Second task.
 I use second formula for sample size calculation from this http://statistica.ru/local-portals/medicine/planirovanie-meditsinskikh-issledovaniy/
